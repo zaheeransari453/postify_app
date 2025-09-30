@@ -1,0 +1,29 @@
+.rightRegistration {
+  height: 100%;
+}
+
+.leftRegistration {
+  color: white;
+  background: url("assets/backgroundImage3.jpg") center/ cover no-repeat;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .rightRegistration {
+    background: none;
+    height: 50%;
+    padding-bottom: 2rem;
+  }
+
+  .leftRegistration {
+    background: none;
+    height: 50%;
+  }
+
+  .registrationBackground {
+    background: url("assets/backgroundImage3.jpg") center center/ cover
+      no-repeat;
+
+    color: white;
+  }
+}

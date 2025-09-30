@@ -1,0 +1,113 @@
+/* ...............admin Container ................ */
+
+.adminContainer {
+  height: 100vh;
+  width: 100%;
+
+  color: #fff;
+  overflow-y: auto;
+}
+
+.content {
+  min-height: 100dvh;
+  background: rgba(0, 0, 0, 0.286);
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.adminSaveBtn {
+  background: transparent;
+  outline: 1px solid #3e9025;
+  box-shadow: 0 5px 6px rgba(9, 9, 9, 0.2), 0 1px 3px rgba(14, 14, 14, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 4px;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.adminSaveBtn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-2px); */
+  background: #3e9025;
+}
+
+/* 
+.adminLogoutBtn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+} */
+
+.recordField.marked {
+  background-color: #3e902561;
+}
+
+.recordField.unmarked {
+  background-color: #ffffff51;
+}
+
+.recordField.default {
+  background-color: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+}
+
+.checkbox.unmarked::after {
+  content: "✘";
+  font-size: 28px;
+  color: red;
+  position: absolute;
+  top: -18px;
+  left: -1px;
+}
+
+.checkbox.marked::after {
+  content: "✔";
+  font-size: 30px;
+  color: green;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+}
+
+.item {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.adminBtn {
+  height: 100%;
+  border-radius: 8px;
+  background: #000a0263;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.adminBtn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.619);
+  transform: translateY(-2px);
+}
+
+.input {
+  background-color: transparent;
+  color: white;
+  min-width: 100%;
+}
+
+.input:disabled {
+  background-color: transparent;
+}
+
+.icon {
+  font-size: 30px;
+}

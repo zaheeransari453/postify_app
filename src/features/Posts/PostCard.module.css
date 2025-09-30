@@ -1,0 +1,92 @@
+.card {
+  min-height: 180px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #030406;
+  background-color: #030406;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.card:hover {
+  transition: 0.3s ease;
+  /* transform: scale(1.02); */
+  box-shadow: 0 4px 8px #030406;
+}
+
+.userInfo {
+  background-color: #030406;
+  border-bottom: 1px solid #3e9025;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.userName {
+  font-size: 0.7rem;
+  color: gray;
+}
+.dropdownMenu {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  background-color: #5f5f5f;
+  border-radius: 8px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+.dropdownMenu .dropdownItem {
+  color: white;
+  cursor: pointer;
+  display: block;
+  padding: 8px;
+}
+.dropdownMenu .dropdownItem:hover {
+  background-color: #3e9025;
+}
+.dropdownMenu .dropdownItem:first-child:hover {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dropdownMenu .dropdownItem:last-child:hover {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.title {
+  color: #3e9025;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.cardFooter {
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 50px;
+}
+.cardFooter .heartIcon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cardFooter .heartIcon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.cardFooter .commentIcon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cardFooter .commentIcon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}

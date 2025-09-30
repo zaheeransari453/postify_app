@@ -1,0 +1,26 @@
+/* ...........Login Form........... */
+.rightLogin {
+  background: url("assets/backgroundImage3.jpg") left center/ cover no-repeat;
+  color: white;
+}
+
+/* .leftLogin {
+    background: #040B09;
+  } */
+
+@media screen and (max-width: 768px) {
+  .leftLogin {
+    background: none;
+  }
+
+  .rightLogin {
+    background: none;
+  }
+
+  .loginBackground {
+    background: url("assets/backgroundImage3.jpg") center center/ cover
+      no-repeat;
+
+    color: white;
+  }
+}

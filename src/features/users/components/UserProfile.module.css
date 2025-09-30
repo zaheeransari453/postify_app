@@ -1,0 +1,93 @@
+.userProfilePage {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.profileCard {
+  height: 90%;
+  background: #030406;
+  border: 4px solid #fff;
+  outline: 1px solid #030406;
+  border-radius: 15px;
+  /* box-shadow: 0 4px 8px #000000; */
+  overflow: scroll;
+  scrollbar-width: none;
+  transition: 0.3s ease;
+}
+.closeIcon {
+  color: #fff;
+  background: #000;
+  position: sticky;
+  top: 0px;
+  padding: 10px 0;
+}
+.closeIcon span {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.closeIcon span:hover {
+  color: #3e9025;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* 
+  .profileCard .body {
+    padding: 20px;
+  } */
+
+.profileImage {
+  margin: 0 auto;
+}
+
+.profileImage img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  font-size: 1.5rem;
+  text-wrap: nowrap;
+  font-weight: bold;
+  color: #3e9025;
+}
+
+.userName {
+  color: #a2a2a2;
+  font-size: 1rem;
+}
+
+.userTitle {
+  font-size: 1rem;
+  color: #ccc;
+  /* margin-bottom: 20px; */
+}
+
+.userEmail,
+.userPhone,
+.userAddress {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.userPosts {
+  display: flex;
+  flex-direction: column;
+  color: #3e9025;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.userPosts:hover {
+  color: #fff;
+  transition: 0.3s all ease;
+}

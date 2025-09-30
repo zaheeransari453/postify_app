@@ -1,0 +1,26 @@
+.navLink {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #040b09;
+  transition: color 0.3s ease;
+  /* Optional hover effect */
+}
+
+.activeLink {
+  color: #040b09;
+}
+
+.profileIcon {
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 2rem;
+}
+
+.profileIcon:hover {
+  color: #040b09;
+}

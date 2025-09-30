@@ -1,0 +1,116 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  background: #ffffff;
+}
+
+.sidebar {
+  width: 35%;
+  height: 100vh;
+  background: #030406;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  position: fixed;
+}
+
+.sidebar.collapsed {
+  width: 15%;
+  transition: all 0.3s ease;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+
+  font-size: 1rem;
+}
+.backBtn > span {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.backBtn > span:hover {
+  color: #3e9025;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contentWrapper {
+  margin-left: 35%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed + .contentWrapper {
+  margin-left: 15%;
+  width: 85%;
+  transition: all 0.3s ease;
+}
+
+.header {
+  background: #50a137;
+  color: white;
+
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
+}
+
+.content {
+  margin-top: 2px;
+  /* padding: 1rem; */
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: calc(100vh - 60px);
+}
+
+.toggleButton {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.toggleButton:hover {
+  background: #3e9025;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .contentWrapper {
+    margin-left: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar.collapsed + .contentWrapper {
+    margin-left: 0%;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .sidebar.collapsed {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .onToggleProfile {
+    width: 100%;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 11;
+  }
+}

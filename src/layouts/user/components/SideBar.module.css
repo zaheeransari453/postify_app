@@ -1,0 +1,147 @@
+.fixedUserInfoDashboard {
+  overflow: hidden;
+  width: 100%;
+}
+
+.collapsed {
+  height: 100%;
+}
+.dashboardCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 16px;
+}
+.collapsed .dashboardCard {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.profilePhoto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  /* margin-top: 10px; */
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Collapsed Profile View */
+.collapsed .profilePhoto {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+.profileName {
+  font-size: 1.3rem;
+}
+.collapsed .profileName {
+  font-size: 0.7rem;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+.profileUserName {
+  font-size: 0.8rem;
+  color: gray;
+  background: white;
+}
+.collapsed .profileUserName {
+  display: none;
+}
+
+.collapsed p {
+  display: none;
+}
+
+.profileEditIcon {
+  position: absolute;
+  bottom: 0px;
+  left: 54%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  background: #fff;
+  color: black;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.collapsed .profileEditIcon {
+  font-size: 1.2rem;
+}
+
+.profileEditIcon:hover {
+  transition: 0.3s ease;
+  transform: translateY(-3px);
+}
+
+.imageSaveIcon {
+  position: absolute;
+  bottom: 40px;
+  left: 54%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 50%;
+  background-color: #3e9025;
+}
+
+.imageErrorCancelIcon {
+  font-size: 1.4rem;
+  color: #3e9025;
+  margin-left: 10px;
+}
+
+.imageErrorCancelIcon:hover {
+  cursor: pointer;
+}
+
+.accountSetting {
+  color: #3e9025;
+  transition: 0.3s ease;
+}
+.accountSetting h5 {
+  font-weight: bold;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+.collapsed .accountSetting {
+  transition: 0.3s ease;
+}
+.collapsed .accountSetting h5 {
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.collapsed .buttons {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.collapsed .buttons button {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 767px) {
+  .dashboardCard {
+    gap: 50px;
+  }
+  .profilePhoto {
+    margin-top: 0px;
+  }
+}

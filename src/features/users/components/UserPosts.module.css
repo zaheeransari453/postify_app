@@ -1,0 +1,32 @@
+.closeIcon {
+  color: #fff;
+  background: #000;
+
+  position: sticky;
+  top: 0px;
+  padding: 10px 0;
+}
+.closeIcon span {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.closeIcon span:hover {
+  color: #3e9025;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.postContent {
+  padding: 1rem;
+  margin-top: 20px;
+  border: 1px solid #fff;
+}
+.postContent h5 {
+  color: #3e9025;
+}
+.postContent p {
+  color: #fff;
+}
