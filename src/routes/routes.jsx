@@ -6,7 +6,7 @@ import Registration from '../pages/Registration';
 import UserLayout from '../layouts/user/UserLayout';
 import AdminLayout from '../layouts/admin/AdminLayout';
 import Posts from '../features/Posts/Posts';
-import Users from '../features/users/users';
+import Users from '../features/users/Users';
 import MyPosts from '../features/Posts/MyPosts';
 import BookMarkPosts from '../features/Posts/BookMarkPosts';
 
